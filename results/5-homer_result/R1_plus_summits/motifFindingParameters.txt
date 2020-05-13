@@ -1,0 +1,1 @@
+cmd = /mnt/d/projects/BME1063_HW3/results/1-peak_region_bed/R1_plus_summits.bed /mnt/d/projects/bme1063_hw3/data/max_circle.fasta /mnt/d/projects/BME1063_HW3/results/5-homer_result/R1_plus_summits -norevopp -size given -len 6,8,10
