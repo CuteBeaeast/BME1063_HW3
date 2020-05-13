@@ -1,0 +1,2049 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --norc --oc /mnt/d/projects/BME1063_HW3/results/6-fimo_counts/R2 /mnt/d/projects/BME1063_HW3/results/4-meme_result/R1_10/meme.txt /mnt/d/projects/BME1063_HW3/results/2-peak_region_fasta/R2.fasta</command-line>
+<pattern-file>/mnt/d/projects/BME1063_HW3/results/4-meme_result/R1_10/meme.txt</pattern-file>
+<sequence-file>/mnt/d/projects/BME1063_HW3/results/2-peak_region_fasta/R2.fasta</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="GGGKKGAAAA" name="MEME-1">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+<matched-element start="23" stop="32" score="11.6633" pvalue="5.49e-05">
+<sequence>ggggagagga</sequence>
+<mem:qvalue>0.0141</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+<matched-element start="28" stop="37" score="12.0306" pvalue="4.47e-05">
+<sequence>ggggagaaag</sequence>
+<mem:qvalue>0.0125</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+<matched-element start="9" stop="18" score="13.7143" pvalue="1.54e-05">
+<sequence>ggggggagaa</sequence>
+<mem:qvalue>0.00468</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+<matched-element start="8" stop="17" score="10.7143" pvalue="9.4e-05">
+<sequence>ggagggaaga</sequence>
+<mem:qvalue>0.0181</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+<matched-element start="1" stop="10" score="10.6429" pvalue="9.71e-05">
+<sequence>gcggagaaaa</sequence>
+<mem:qvalue>0.0181</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+<matched-element start="38" stop="47" score="14.8878" pvalue="5.37e-06">
+<sequence>ggggagaaaa</sequence>
+<mem:qvalue>0.0018</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+<matched-element start="28" stop="37" score="11.2857" pvalue="6.98e-05">
+<sequence>gaggagaaaa</sequence>
+<mem:qvalue>0.0146</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+<matched-element start="40" stop="49" score="11.4592" pvalue="6.33e-05">
+<sequence>ggggggaacc</sequence>
+<mem:qvalue>0.0141</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+<matched-element start="3" stop="12" score="11.4592" pvalue="6.33e-05">
+<sequence>ggggggaacc</sequence>
+<mem:qvalue>0.0141</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+<matched-element start="22" stop="31" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+<matched-element start="2" stop="11" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+<matched-element start="2" stop="11" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+<matched-element start="21" stop="30" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+<matched-element start="2" stop="11" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+<matched-element start="21" stop="30" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+<matched-element start="2" stop="11" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+<matched-element start="21" stop="30" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+<matched-element start="2" stop="11" score="15.7449" pvalue="2.29e-06">
+<sequence>gggttgaaaa</sequence>
+<mem:qvalue>0.000853</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AAAATTTGTA" name="MEME-2">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+<matched-element start="10" stop="19" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+<matched-element start="1" stop="10" score="10.1468" pvalue="2.85e-05">
+<sequence>ataatttgta</sequence>
+<mem:qvalue>0.00522</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+<matched-element start="26" stop="35" score="10.1468" pvalue="2.85e-05">
+<sequence>aatatttgta</sequence>
+<mem:qvalue>0.00522</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+<matched-element start="37" stop="46" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+<matched-element start="17" stop="26" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+<matched-element start="17" stop="26" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+<matched-element start="36" stop="45" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+<matched-element start="17" stop="26" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+<matched-element start="7" stop="16" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+<matched-element start="36" stop="45" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+<matched-element start="17" stop="26" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+<matched-element start="36" stop="45" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+<matched-element start="17" stop="26" score="18.7615" pvalue="2.08e-06">
+<sequence>aaaatttgta</sequence>
+<mem:qvalue>0.000448</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="CTCKCCTTTT" name="MEME-3">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+<matched-element start="14" stop="23" score="12.009" pvalue="4.5e-05">
+<sequence>ctggcatttt</sequence>
+<mem:qvalue>0.0397</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+<matched-element start="34" stop="43" score="16.5315" pvalue="7.59e-07">
+<sequence>ctcgcctttt</sequence>
+<mem:qvalue>0.00268</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+<matched-element start="15" stop="24" score="12.018" pvalue="4.4e-05">
+<sequence>cacccatttt</sequence>
+<mem:qvalue>0.0397</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+<matched-element start="9" stop="18" score="15.3153" pvalue="3.01e-06">
+<sequence>ctctcctttt</sequence>
+<mem:qvalue>0.00531</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="ATTGCTAAAT" name="MEME-4">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+<matched-element start="10" stop="19" score="18.5138" pvalue="1.64e-06">
+<sequence>attgctaaat</sequence>
+<mem:qvalue>0.0014</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+<matched-element start="9" stop="18" score="15.9541" pvalue="4.37e-06">
+<sequence>atggctaaat</sequence>
+<mem:qvalue>0.0028</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+<matched-element start="9" stop="18" score="18.5138" pvalue="1.64e-06">
+<sequence>attgctaaat</sequence>
+<mem:qvalue>0.0014</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+<matched-element start="9" stop="18" score="18.5138" pvalue="1.64e-06">
+<sequence>attgctaaat</sequence>
+<mem:qvalue>0.0014</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+<matched-element start="16" stop="25" score="12.9633" pvalue="9.15e-06">
+<sequence>attactaagt</sequence>
+<mem:qvalue>0.00469</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="CYYCWGTCCC" name="MEME-5">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+<matched-element start="31" stop="40" score="17.3714" pvalue="1.94e-06">
+<sequence>cctctgtccc</sequence>
+<mem:qvalue>0.00537</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+<matched-element start="12" stop="21" score="17.3" pvalue="3.04e-06">
+<sequence>ctccagtccc</sequence>
+<mem:qvalue>0.00537</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="RGGGAGAGGG" name="MEME-6">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+<matched-element start="6" stop="15" score="13.6055" pvalue="1.47e-05">
+<sequence>agggggcggg</sequence>
+<mem:qvalue>0.0111</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+<matched-element start="11" stop="20" score="17.0459" pvalue="5.98e-07">
+<sequence>ggggagaggg</sequence>
+<mem:qvalue>0.00206</mem:qvalue>
+</matched-element>
+<matched-element start="23" stop="32" score="14.9541" pvalue="5.06e-06">
+<sequence>ggggagagga</sequence>
+<mem:qvalue>0.00626</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+<matched-element start="12" stop="21" score="13.0459" pvalue="1.94e-05">
+<sequence>atggggaggg</sequence>
+<mem:qvalue>0.0111</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+<matched-element start="25" stop="34" score="13.0459" pvalue="1.94e-05">
+<sequence>atggggaggg</sequence>
+<mem:qvalue>0.0111</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+<matched-element start="42" stop="51" score="14.8991" pvalue="5.44e-06">
+<sequence>ggggggcggg</sequence>
+<mem:qvalue>0.00626</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+<matched-element start="34" stop="43" score="12.6789" pvalue="2.94e-05">
+<sequence>agggagaagg</sequence>
+<mem:qvalue>0.0145</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+<matched-element start="34" stop="43" score="11.5688" pvalue="5.77e-05">
+<sequence>agagagagga</sequence>
+<mem:qvalue>0.0221</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+<matched-element start="4" stop="13" score="11.8257" pvalue="5.34e-05">
+<sequence>gggaggcggg</sequence>
+<mem:qvalue>0.0221</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="AAAHCCCYAA" name="MEME-7">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+<matched-element start="42" stop="51" score="16.9214" pvalue="9.58e-07">
+<sequence>aaacccccaa</sequence>
+<mem:qvalue>0.00338</mem:qvalue>
+</matched-element>
+<matched-element start="13" stop="22" score="9.56429" pvalue="8.75e-05">
+<sequence>aaatcctcaa</sequence>
+<mem:qvalue>0.103</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+<matched-element start="20" stop="29" score="15.4071" pvalue="8.49e-06">
+<sequence>aaatccctaa</sequence>
+<mem:qvalue>0.015</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="GAGAAGGACA" name="MEME-8">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+<matched-element start="12" stop="21" score="17.95" pvalue="2.13e-06">
+<sequence>cagaaggaca</sequence>
+<mem:qvalue>0.00372</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+<matched-element start="32" stop="41" score="18.8929" pvalue="1.08e-06">
+<sequence>gagaaggaca</sequence>
+<mem:qvalue>0.00372</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="CGGMTCWTTM" name="MEME-9">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+<matched-element start="1" stop="10" score="16.0656" pvalue="6.5e-07">
+<sequence>cggctctttc</sequence>
+<mem:qvalue>0.00229</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+<pattern accession="TGTAAAAAAC" name="MEME-10">
+<scanned-sequence accession="max_circle:3509-3560(-)" name="max_circle:3509-3560(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3626-3677(-)" name="max_circle:3626-3677(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3701-3752(-)" name="max_circle:3701-3752(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3775-3826(-)" name="max_circle:3775-3826(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3862-3913(-)" name="max_circle:3862-3913(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4021-4072(-)" name="max_circle:4021-4072(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6725-6776(-)" name="max_circle:6725-6776(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6752-6803(-)" name="max_circle:6752-6803(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6831-6882(-)" name="max_circle:6831-6882(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6978-7029(-)" name="max_circle:6978-7029(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7019-7070(-)" name="max_circle:7019-7070(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7108-7159(-)" name="max_circle:7108-7159(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:7949-8000(-)" name="max_circle:7949-8000(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8067-8118(-)" name="max_circle:8067-8118(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9017-9068(-)" name="max_circle:9017-9068(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10809-10860(-)" name="max_circle:10809-10860(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10899-10950(-)" name="max_circle:10899-10950(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11027-11078(-)" name="max_circle:11027-11078(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:11932-11983(-)" name="max_circle:11932-11983(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12103-12154(-)" name="max_circle:12103-12154(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12316-12367(-)" name="max_circle:12316-12367(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12537-12588(-)" name="max_circle:12537-12588(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12698-12749(-)" name="max_circle:12698-12749(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14089-14140(-)" name="max_circle:14089-14140(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14107-14158(-)" name="max_circle:14107-14158(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14120-14171(-)" name="max_circle:14120-14171(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14165-14216(-)" name="max_circle:14165-14216(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14241-14292(-)" name="max_circle:14241-14292(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14298-14349(-)" name="max_circle:14298-14349(-)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1195-1246(+)" name="max_circle:1195-1246(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1338-1389(+)" name="max_circle:1338-1389(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1699-1750(+)" name="max_circle:1699-1750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1788-1839(+)" name="max_circle:1788-1839(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:1963-2014(+)" name="max_circle:1963-2014(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2044-2095(+)" name="max_circle:2044-2095(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2276-2327(+)" name="max_circle:2276-2327(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2451-2502(+)" name="max_circle:2451-2502(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2516-2567(+)" name="max_circle:2516-2567(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2642-2693(+)" name="max_circle:2642-2693(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2797-2848(+)" name="max_circle:2797-2848(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:2940-2991(+)" name="max_circle:2940-2991(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3018-3069(+)" name="max_circle:3018-3069(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:3141-3192(+)" name="max_circle:3141-3192(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4006-4057(+)" name="max_circle:4006-4057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4122-4173(+)" name="max_circle:4122-4173(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4303-4354(+)" name="max_circle:4303-4354(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4756-4807(+)" name="max_circle:4756-4807(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:4992-5043(+)" name="max_circle:4992-5043(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5155-5206(+)" name="max_circle:5155-5206(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5275-5326(+)" name="max_circle:5275-5326(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5300-5351(+)" name="max_circle:5300-5351(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:5344-5395(+)" name="max_circle:5344-5395(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6307-6358(+)" name="max_circle:6307-6358(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6339-6390(+)" name="max_circle:6339-6390(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6587-6638(+)" name="max_circle:6587-6638(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:6699-6750(+)" name="max_circle:6699-6750(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8000-8051(+)" name="max_circle:8000-8051(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8082-8133(+)" name="max_circle:8082-8133(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:8119-8170(+)" name="max_circle:8119-8170(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9652-9703(+)" name="max_circle:9652-9703(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:9808-9859(+)" name="max_circle:9808-9859(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:10777-10828(+)" name="max_circle:10777-10828(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:12705-12756(+)" name="max_circle:12705-12756(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14006-14057(+)" name="max_circle:14006-14057(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14251-14302(+)" name="max_circle:14251-14302(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14390-14441(+)" name="max_circle:14390-14441(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:14427-14478(+)" name="max_circle:14427-14478(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16213-16264(+)" name="max_circle:16213-16264(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16873-16924(+)" name="max_circle:16873-16924(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:16893-16944(+)" name="max_circle:16893-16944(+)">
+<matched-element start="42" stop="51" score="18.8197" pvalue="1.82e-06">
+<sequence>tgtaaaaaac</sequence>
+<mem:qvalue>0.000835</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17757-17808(+)" name="max_circle:17757-17808(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:17985-18036(+)" name="max_circle:17985-18036(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18004-18055(+)" name="max_circle:18004-18055(+)">
+<matched-element start="42" stop="51" score="18.8197" pvalue="1.82e-06">
+<sequence>tgtaaaaaac</sequence>
+<mem:qvalue>0.000835</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:18359-18410(+)" name="max_circle:18359-18410(+)">
+<matched-element start="34" stop="43" score="11.3115" pvalue="5.21e-05">
+<sequence>tgtaaaaaat</sequence>
+<mem:qvalue>0.0205</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19930-19981(+)" name="max_circle:19930-19981(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19949-20000(+)" name="max_circle:19949-20000(+)">
+<matched-element start="42" stop="51" score="18.8197" pvalue="1.82e-06">
+<sequence>tgtaaaaaac</sequence>
+<mem:qvalue>0.000835</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:19990-20041(+)" name="max_circle:19990-20041(+)">
+<matched-element start="1" stop="10" score="18.8197" pvalue="1.82e-06">
+<sequence>tgtaaaaaac</sequence>
+<mem:qvalue>0.000835</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20746-20797(+)" name="max_circle:20746-20797(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20765-20816(+)" name="max_circle:20765-20816(+)">
+<matched-element start="42" stop="51" score="18.8197" pvalue="1.82e-06">
+<sequence>tgtaaaaaac</sequence>
+<mem:qvalue>0.000835</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:20806-20857(+)" name="max_circle:20806-20857(+)">
+<matched-element start="1" stop="10" score="18.8197" pvalue="1.82e-06">
+<sequence>tgtaaaaaac</sequence>
+<mem:qvalue>0.000835</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22586-22637(+)" name="max_circle:22586-22637(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22619-22670(+)" name="max_circle:22619-22670(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22682-22733(+)" name="max_circle:22682-22733(+)">
+</scanned-sequence>
+<scanned-sequence accession="max_circle:22728-22779(+)" name="max_circle:22728-22779(+)">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>
