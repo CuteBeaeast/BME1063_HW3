@@ -1,0 +1,18 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+GAAAAATTTG	MEME-3	max_circle	16907	16916	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	16907	16916	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	17771	17780	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	18018	18027	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	18018	18027	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	18363	18372	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	19963	19972	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	19963	19972	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	20779	20788	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	20779	20788	+	16.8462	5.82e-06	0.00408	gaaaaatttg
+GAAAAATTTG	MEME-3	max_circle	7017	7026	-	14.8681	1e-05	0.0064	GAAAACTTTG
+GAAAAATTTG	MEME-3	max_circle	1360	1369	-	13.3077	1.59e-05	0.00926	GTAAAATTTG
+GAAAAATTTG	MEME-3	max_circle	8143	8152	+	11.3077	3.01e-05	0.0162	gaaaagtttc
+
+# FIMO (Find Individual Motif Occurrences): Version 5.0.5 compiled on Aug  6 2019 at 07:48:46
+# The format of this file is described at http://meme-suite.org/doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_2 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GAAAAATTTG /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta

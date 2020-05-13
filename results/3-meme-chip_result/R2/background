@@ -1,0 +1,24 @@
+# 1-order Markov frequencies from file /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta
+# seqs: 84    min: 51    max: 51    avg: 51.0    sum: 4284    alph: DNA
+# order 0
+A 3.669e-01
+C 1.331e-01
+G 1.331e-01
+T 3.669e-01
+# order 1
+AA 1.590e-01
+AC 4.238e-02
+AG 4.417e-02
+AT 1.212e-01
+CA 4.619e-02
+CC 3.452e-02
+CG 7.620e-03
+CT 4.417e-02
+GA 4.274e-02
+GC 1.286e-02
+GG 3.452e-02
+GT 4.238e-02
+TA 1.202e-01
+TC 4.274e-02
+TG 4.619e-02
+TT 1.590e-01

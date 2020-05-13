@@ -1,0 +1,49 @@
+Starting getsize: getsize /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta 1> $metrics
+getsize ran successfully in 0.014871 seconds
+Starting fasta-most: fasta-most -min 50 < /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta 1> $metrics
+fasta-most ran successfully in 0.058082 seconds
+Starting fasta-center: fasta-center -dna -len 100 < /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta 1> /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered
+fasta-center ran successfully in 0.068547 seconds
+Starting fasta-shuffle-letters: fasta-shuffle-letters /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-shuffled -kmer 2 -tag -dinuc -dna -seed 1
+fasta-shuffle-letters ran successfully in 0.019373 seconds
+Starting fasta-get-markov: fasta-get-markov -nostatus -nosummary -dna -m 1 /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background
+fasta-get-markov ran successfully in 0.019228 seconds
+Starting meme: meme /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out -mod zoops -nmotifs 10 -minw 6 -maxw 10 -bfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -dna -revcomp -nostatus
+meme ran successfully in 11.593267 seconds
+Starting dreme: dreme -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/dreme_out -png -dna -p /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered -n /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-shuffled
+  File "/home/panxq/anaconda3/bin/dreme", line 765
+    print "Finding secondary RE in left flank..."
+                                                ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Finding secondary RE in left flank...")?
+dreme exited with error code 1
+Starting centrimo: centrimo -seqlen 51 -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/centrimo_out -bfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+Bad file name.
+FATAL: Template does not contain data section.
+
+centrimo exited with error code 1
+Starting tomtom: tomtom -verbosity 1 -text -thresh 0.1 /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/combined.meme /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/combined.meme 1> /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/motif_alignment.txt
+tomtom ran successfully in 0.029852 seconds
+Starting spamo: spamo -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/spamo_out_1 -bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -keepprimary -primary GGGKWGARAR /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
+spamo exited with error code 1
+Starting spamo: spamo -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/spamo_out_2 -bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -keepprimary -primary GAAAAATTTG /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
+spamo exited with error code 1
+Starting fimo: fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_1 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GGGKWGARAR /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta
+fimo ran successfully in 0.065492 seconds
+Starting fimo: fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_2 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GAAAAATTTG /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta
+fimo ran successfully in 0.059558 seconds
+Starting meme-chip_html_to_tsv: meme-chip_html_to_tsv /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme-chip.html /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/summary.tsv "meme-chip -dna -meme-nmotifs 10 -meme-minw 6 -meme-maxw 10 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2 /mnt/d/projects/BME1063_HW3/results/2-peak_region_fasta/R2.fasta" 5.0.5 "Mon Mar 18 20\:12\:19 2019 -0700"
+meme-chip_html_to_tsv ran successfully in 0.111275 seconds

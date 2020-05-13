@@ -1,0 +1,47 @@
+motif_id	motif_alt_id	sequence_name	start	stop	strand	score	p-value	q-value	matched_sequence
+GGGKWGARAR	MEME-1	max_circle	3711	3720	+	18.9881	1.33e-08	9.01e-05	ggggagaggg
+GGGKWGARAR	MEME-1	max_circle	3723	3732	+	18.0357	1.73e-07	0.000587	ggggagagga
+GGGKWGARAR	MEME-1	max_circle	12564	12573	+	17.9524	2.73e-07	0.000619	ggggagaaag
+GGGKWGARAR	MEME-1	max_circle	6624	6633	+	17	1.08e-06	0.00183	ggggagaaaa
+GGGKWGARAR	MEME-1	max_circle	14128	14137	+	15.1429	4.38e-06	0.00338	ggggggagaa
+GGGKWGARAR	MEME-1	max_circle	14303	14312	-	15.1071	5.46e-06	0.00338	GGAGAGAAAG
+GGGKWGARAR	MEME-1	max_circle	16894	16903	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	16894	16903	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	17758	17767	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	18005	18014	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	18005	18014	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	19950	19959	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	19950	19959	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	20766	20775	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	20766	20775	+	14.5	7.55e-06	0.00338	gggttgaaaa
+GGGKWGARAR	MEME-1	max_circle	6701	6710	+	14.4405	8.18e-06	0.00338	ggagagaaga
+GGGKWGARAR	MEME-1	max_circle	4308	4317	+	14.3214	8.46e-06	0.00338	ggggtaaggg
+GGGKWGARAR	MEME-1	max_circle	14400	14409	+	14.0119	1.03e-05	0.00388	ggggaggaga
+GGGKWGARAR	MEME-1	max_circle	3662	3671	+	13.8452	1.13e-05	0.00402	gggtagcggg
+GGGKWGARAR	MEME-1	max_circle	14255	14264	-	13.2024	1.74e-05	0.00523	GGAGAGAGCA
+GGGKWGARAR	MEME-1	max_circle	14268	14277	+	13.2024	1.74e-05	0.00523	ggagagagca
+GGGKWGARAR	MEME-1	max_circle	14195	14204	+	13.1905	1.75e-05	0.00523	ggggtgaatg
+GGGKWGARAR	MEME-1	max_circle	14282	14291	+	13.1071	1.77e-05	0.00523	ggggggcggg
+GGGKWGARAR	MEME-1	max_circle	14103	14112	+	12.7976	2.23e-05	0.0059	gggtaaagag
+GGGKWGARAR	MEME-1	max_circle	14139	14148	+	12.7976	2.23e-05	0.0059	gggtaaagag
+GGGKWGARAR	MEME-1	max_circle	14102	14111	+	12.619	2.34e-05	0.0059	ggggtaaaga
+GGGKWGARAR	MEME-1	max_circle	14138	14147	+	12.619	2.34e-05	0.0059	ggggtaaaga
+GGGKWGARAR	MEME-1	max_circle	3736	3745	+	12.4048	2.75e-05	0.00667	ggattgagaa
+GGGKWGARAR	MEME-1	max_circle	3718	3727	+	12.2619	3.19e-05	0.00709	gggttgggga
+GGGKWGARAR	MEME-1	max_circle	5275	5284	+	12.2143	3.27e-05	0.00709	gcggagaaaa
+GGGKWGARAR	MEME-1	max_circle	8096	8105	-	12.1667	3.33e-05	0.00709	GGACAGAGGG
+GGGKWGARAR	MEME-1	max_circle	3725	3734	+	12.119	3.39e-05	0.00709	ggagaggagg
+GGGKWGARAR	MEME-1	max_circle	5025	5034	+	12.0714	3.45e-05	0.00709	agggagaagg
+GGGKWGARAR	MEME-1	max_circle	5195	5204	+	11.9167	3.74e-05	0.00748	ggagagggga
+GGGKWGARAR	MEME-1	max_circle	5162	5171	+	11.8333	3.95e-05	0.00767	ggagggaaga
+GGGKWGARAR	MEME-1	max_circle	6626	6635	+	11.3571	5e-05	0.00918	ggagaaaagg
+GGGKWGARAR	MEME-1	max_circle	8111	8120	+	11.3571	5e-05	0.00918	ggagaaaagg
+GGGKWGARAR	MEME-1	max_circle	14425	14434	+	11.2381	5.23e-05	0.00934	gggtgggggg
+GGGKWGARAR	MEME-1	max_circle	5186	5195	+	11.131	5.57e-05	0.00969	cgagagagag
+GGGKWGARAR	MEME-1	max_circle	14398	14407	+	10.6429	7.14e-05	0.0121	gcggggagga
+GGGKWGARAR	MEME-1	max_circle	8104	8113	-	10.4881	7.54e-05	0.0125	GGGTTTAGGG
+GGGKWGARAR	MEME-1	max_circle	5277	5286	+	10.119	9.5e-05	0.0154	ggagaaaaaa
+
+# FIMO (Find Individual Motif Occurrences): Version 5.0.5 compiled on Aug  6 2019 at 07:48:46
+# The format of this file is described at http://meme-suite.org/doc/fimo-output-format.html.
+# fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_1 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GGGKWGARAR /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta

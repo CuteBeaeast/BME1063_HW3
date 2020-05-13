@@ -1,0 +1,14 @@
+##gff-version 3
+max_circle	fimo	nucleotide_motif	7017	7026	 50	-	.	Name=GAAAAATTTG_max_circle-;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=1e-05;qvalue= 0.0064;sequence=GAAAACTTTG;
+max_circle	fimo	nucleotide_motif	1360	1369	 48	-	.	Name=GAAAAATTTG_max_circle-;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=1.59e-05;qvalue= 0.00926;sequence=GTAAAATTTG;
+max_circle	fimo	nucleotide_motif	8143	8152	45.2	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=3.01e-05;qvalue= 0.0162;sequence=gaaaagtttc;
+max_circle	fimo	nucleotide_motif	16907	16916	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	16907	16916	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	17771	17780	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	18018	18027	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	18018	18027	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	18363	18372	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	19963	19972	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	19963	19972	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	20779	20788	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;
+max_circle	fimo	nucleotide_motif	20779	20788	52.3	+	.	Name=GAAAAATTTG_max_circle+;Alias=MEME-3;ID=GAAAAATTTG-MEME-3-1-max_circle;pvalue=5.82e-06;qvalue= 0.00408;sequence=gaaaaatttg;

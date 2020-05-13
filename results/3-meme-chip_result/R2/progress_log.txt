@@ -1,0 +1,58 @@
+Invoking:
+  getsize /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta 1> $metrics
+Finished invoke:
+  name: count_seqs  status: 0  time: 0.014871
+Invoking:
+  fasta-most -min 50 < /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta 1> $metrics
+Finished invoke:
+  name: most_seqs  status: 0  time: 0.058082
+Invoking:
+  fasta-center -dna -len 100 < /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta 1> /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered
+Finished invoke:
+  name: center_seqs  status: 0  time: 0.068547
+Invoking:
+  fasta-shuffle-letters /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-shuffled -kmer 2 -tag -dinuc -dna -seed 1
+Finished invoke:
+  name: shuffle_seqs  status: 0  time: 0.019373
+Invoking:
+  fasta-get-markov -nostatus -nosummary -dna -m 1 /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background
+Finished invoke:
+  name: bg  status: 0  time: 0.019228
+Invoking:
+  meme /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out -mod zoops -nmotifs 10 -minw 6 -maxw 10 -bfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -dna -revcomp -nostatus
+Finished invoke:
+  name: meme  status: 0  time: 11.593267
+Invoking:
+  dreme -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/dreme_out -png -dna -p /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-centered -n /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/seqs-shuffled
+Finished invoke:
+  name: dreme  status: 256  time: 0.045429
+Invoking:
+  centrimo -seqlen 51 -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/centrimo_out -bfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
+Finished invoke:
+  name: centrimo  status: 256  time: 0.131038
+Invoking:
+  tomtom -verbosity 1 -text -thresh 0.1 /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/combined.meme /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/combined.meme 1> /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/motif_alignment.txt
+Finished invoke:
+  name: align  status: 0  time: 0.029852
+Invoking:
+  spamo -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/spamo_out_1 -bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -keepprimary -primary GGGKWGARAR /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
+Finished invoke:
+  name: spamo1  status: 256  time: 0.079501
+Invoking:
+  spamo -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/spamo_out_2 -bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -keepprimary -primary GAAAAATTTG /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
+Finished invoke:
+  name: spamo2  status: 256  time: 0.075538
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_1 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GGGKWGARAR /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta
+Finished invoke:
+  name: fimo1  status: 0  time: 0.065492
+Invoking:
+  fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_2 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GAAAAATTTG /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta
+Finished invoke:
+  name: fimo2  status: 0  time: 0.059558
+Writing output
+Invoking:
+  meme-chip_html_to_tsv /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme-chip.html /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/summary.tsv "meme-chip -dna -meme-nmotifs 10 -meme-minw 6 -meme-maxw 10 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2 /mnt/d/projects/BME1063_HW3/results/2-peak_region_fasta/R2.fasta" 5.0.5 "Mon Mar 18 20\:12\:19 2019 -0700"
+Finished invoke:
+  name: summary  status: 0  time: 0.111275
+Done

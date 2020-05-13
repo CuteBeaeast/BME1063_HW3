@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!-- Document definition -->
+<!-- http://zlab.bu.edu/~phaverty/SupplementalData/CisML/cisml.dtd -->
+<!DOCTYPE cis-element-search[
+<!ELEMENT cis-element-search (program-name, parameters, (pattern | multi-pattern-scan)*)>
+<!ELEMENT program-name (#PCDATA)>
+<!ELEMENT parameters (
+  pattern-file, 
+  sequence-file, 
+  background-seq-file?,
+  pattern-pvalue-cutoff?,
+  sequence-pvalue-cutoff?,
+  site-pvalue-cutoff?,
+  sequence-filtering,
+  ANY*
+ )>
+<!ELEMENT command-line (#PCDATA)>
+<!ELEMENT pattern-file (#PCDATA)>
+<!ELEMENT sequence-file (#PCDATA)>
+<!ELEMENT background-seq-file (#PCDATA)>
+<!ELEMENT pattern-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-pvalue-cutoff (#PCDATA)>
+<!ELEMENT site-pvalue-cutoff (#PCDATA)>
+<!ELEMENT sequence-filtering EMPTY>
+<!ELEMENT multi-pattern-scan (pattern+, ANY*)>
+<!ELEMENT pattern (scanned-sequence+, ANY*)>
+<!ELEMENT scanned-sequence (matched-element*, ANY*)>
+<!ELEMENT matched-element (sequence)>
+<!ELEMENT sequence (#PCDATA)>
+<!ATTLIST cis-element-search
+xmlns:xsi CDATA #IMPLIED
+xmlns:mem CDATA #IMPLIED
+xsi:schemaLocation CDATA #IMPLIED
+>
+<!ATTLIST sequence-filtering
+on-off CDATA #REQUIRED
+type CDATA #IMPLIED
+>
+<!ATTLIST multi-pattern-scan
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+>
+<!ATTLIST pattern
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+pvalue CDATA #IMPLIED
+score CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST scanned-sequence
+accession CDATA #REQUIRED
+name CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+length CDATA #IMPLIED
+db CDATA #IMPLIED
+lsid CDATA #IMPLIED
+>
+<!ATTLIST matched-element
+start CDATA #REQUIRED
+stop CDATA #REQUIRED
+score CDATA #IMPLIED
+pvalue CDATA #IMPLIED
+clusterid CDATA #IMPLIED
+>
+
+]>
+<cis-element-search
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://zlab.bu.edu/schema/cisml cisml.xsd"
+  xmlns="http://zlab.bu.edu/schema/cisml"
+  xmlns:mem="http://noble.gs.washington.edu/meme"
+>
+<program-name>fimo</program-name>
+<parameters>
+<command-line>fimo --parse-genomic-coord --verbosity 1 --oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/fimo_out_2 --bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background --motif GAAAAATTTG /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta</command-line>
+<pattern-file>/mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml</pattern-file>
+<sequence-file>/mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta</sequence-file>
+<site-pvalue-cutoff>0.0001</site-pvalue-cutoff>
+<sequence-filtering on-off="off"/>
+</parameters>
+<pattern accession="GAAAAATTTG" name="MEME-3">
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="7026" stop="7017" score="14.8681" pvalue="1e-05">
+<sequence>GAAAACTTTG</sequence>
+<mem:qvalue>0.0064</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="1369" stop="1360" score="13.3077" pvalue="1.59e-05">
+<sequence>GTAAAATTTG</sequence>
+<mem:qvalue>0.00926</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="8143" stop="8152" score="11.3077" pvalue="3.01e-05">
+<sequence>gaaaagtttc</sequence>
+<mem:qvalue>0.0162</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="16907" stop="16916" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="16907" stop="16916" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="17771" stop="17780" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="18018" stop="18027" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="18018" stop="18027" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="18363" stop="18372" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="19963" stop="19972" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="19963" stop="19972" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="20779" stop="20788" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+<matched-element start="20779" stop="20788" score="16.8462" pvalue="5.82e-06">
+<sequence>gaaaaatttg</sequence>
+<mem:qvalue>0.00408</mem:qvalue>
+</matched-element>
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<scanned-sequence accession="max_circle" name="max_circle">
+</scanned-sequence>
+<mem:has-qvalues>yes</mem:has-qvalues>
+</pattern>
+</cis-element-search>

@@ -1,0 +1,15 @@
+prim_db	prim_id	prim_alt	prim_cons	sec_db	sec_id	sec_alt	sec_cons	trim_left	trim_right	red_db	red_id	red_alt	E-value	gap	orient	count	total	adj_p-value	p-value
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	AAACCCCC	MEME-7	AAACCCCC	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	GAAAAATTTG	MEME-3	GAAAAATTTG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	GASAAACG	MEME-10	GASAAACG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	GATGGGAAAC	MEME-9	GATGGGAAAC	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	GKGGAGGG	MEME-2	GKGGAGGG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	GTCAGGTTG	MEME-8	GTCAGGTTG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	TCACTGAAGG	MEME-4	TCACTGAAGG	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	TCCTYC	MEME-5	TCCTYC	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+meme.xml	GGGKWGARAR	MEME-1	GGGKWGARAR	meme.xml	TGTAAAAAAC	MEME-6	TGTAAAAAAC	0	0	.	.	.	1.00e+01	0	0	0	0	1.00e+00	1.00e+00
+
+# SpaMo (Spaced Motif Analysis Tool): Version 5.0.5 compiled on Aug  6 2019 at 07:48:56
+# The format of this file is described at http://meme-suite.org/doc/spamo-output-format.html.
+# spamo -verbosity 1 -oc /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/spamo_out_1 -bgfile /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/background -keepprimary -primary GGGKWGARAR /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/R2.fasta /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml /mnt/d/projects/BME1063_HW3/results/3-meme-chip_result/R2/meme_out/meme.xml
